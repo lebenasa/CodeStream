@@ -1,0 +1,26 @@
+{
+  "name": "CodeStream",
+  "version": "0.0.0",
+  "description": "File system watcher service and renderer",
+  "main": "src/index.ts",
+  "author": "Leben Asa",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc -p tsconfig.dev.json",
+    "build:prod": "tsc",
+    "dev": "yarn run build && node ./dist/index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "fb-watchman": "^2.0.1"
+  },
+  "devDependencies": {
+    "@tsconfig/node12": "^1.0.7",
+    "@types/express": "^4.17.11",
+    "@types/fb-watchman": "^2.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.13.0",
+    "@typescript-eslint/parser": "^4.13.0",
+    "eslint": "^7.18.0",
+    "typescript": "^4.1.3"
+  }
+}
